@@ -1,0 +1,857 @@
+@font-face {
+    font-family: 'orbitronregular';
+    src: url('../../fonts/orbitron-variablefont_wght-webfont.woff2') format('woff2'),
+    url('../../fonts/orbitron-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ubuntubold';
+    src: url('../../fonts/ubuntu-bold-webfont.woff2') format('woff2'),
+    url('../../fonts/ubuntu-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ubuntubold_italic';
+    src: url('../../fonts/ubuntu-bolditalic-webfont.woff2') format('woff2'),
+    url('../../fonts/ubuntu-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ubuntuitalic';
+    src: url('../../fonts/ubuntu-italic-webfont.woff2') format('woff2'),
+    url('../../fonts/ubuntu-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ubuntulight';
+    src: url('../../fonts/ubuntu-light-webfont.woff2') format('woff2'),
+    url('../../fonts/ubuntu-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ubuntulight_italic';
+    src: url('../../fonts/ubuntu-lightitalic-webfont.woff2') format('woff2'),
+    url('../../fonts/ubuntu-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ubuntumedium';
+    src: url('../../fonts/ubuntu-medium-webfont.woff2') format('woff2'),
+    url('../../fonts/ubuntu-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ubuntumedium_italic';
+    src: url('../../fonts/ubuntu-mediumitalic-webfont.woff2') format('woff2'),
+    url('../../fonts/ubuntu-mediumitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ubunturegular';
+    src: url('../../fonts/ubuntu-regular-webfont.woff2') format('woff2'),
+    url('../../fonts/ubuntu-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.orbitron-regular{
+    font-family: 'orbitronregular';
+}
+.ubuntu-bold{
+    font-family: 'ubuntubold';
+}
+.ubuntu-italic{
+    font-family: 'ubuntuitalic';
+}
+.ubuntu-bold_italic{
+    font-family: 'ubuntubold_italic';
+}
+.ubuntu-light{
+    font-family: 'ubuntulight';
+}
+.ubuntu-light_italic{
+    font-family: 'ubuntulight_italic';
+}
+.ubuntu-medium{
+    font-family: 'ubuntumedium';
+}
+.ubuntu-medium_italic{
+    font-family: 'ubuntumedium_italic';
+}
+.ubuntu-regular{
+    font-family: 'ubunturegular';
+}
+
+
+.logo{
+    width: 192px;
+    height: 55px;
+}
+
+nav{
+    background: linear-gradient(145deg, rgba(255, 255, 255, 1) 8%, #EDFEFA 70%);
+}
+
+.scroll-color{
+    background-color: white !important;
+}
+.nav-container{
+    padding-right: 29px;
+    padding-left: 33px;
+    padding-top:27px;
+}
+.nav-link button{
+    font-size: 16px;
+}
+.nav-link{
+    margin-right: 3.1rem;
+    font-size: 16px;
+    color: #a39161 !important;
+}
+.nav-link.active{
+    content: "";
+    display: block;
+    color: #a39161 !important;
+}
+
+.nav-link.active:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    border-bottom: 3px solid #a39161;
+    border-radius:10px 10px 10px 10px;
+}
+.nav-item a:hover {
+    text-decoration: none;
+}
+
+
+.business-login-btn{
+    padding: 9px 11px;
+    border-radius: 11px;
+    background-color: #cb5d8a;
+    color: white;
+}
+.business-login-btn:hover{
+    background-color: #cd4c84;
+    color: white;
+}
+
+.app-store-btn-left{
+    background: rgba(88, 95, 99, 0.97);
+    border-right: 0.1rem solid white;
+    padding: .175rem 0;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+.app-store-btn-right{
+    text-align: left;
+    padding: .175rem .75rem;
+    width: fit-content;
+    font-weight: lighter;
+    color: white;
+    background: rgba(88, 95, 99, 0.97);
+    font-size: 10px;
+    margin: 0 0;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+.app-store-btn-right:hover {
+    color: white;
+    background: rgba(88, 95, 99, 0.97);
+}
+.btn-group:hover  .app-store-btn-right {
+    background: rgb(88, 95, 99);
+}
+.btn-group:hover .app-store-btn-left {
+    background: rgb(88, 95, 99);
+}
+.google-play-btn-left{
+    padding: .175rem 0;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-right: 1.6px solid #939393 !important;
+    background: white;
+}
+.google-play-btn-right{
+    width: fit-content;
+    margin: 0 0;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    text-align: left;
+    padding: .175rem .75rem;
+    font-weight: 500;
+    color: rgb(66, 66, 66);
+    background: white;
+    font-size: 10px;
+}
+.btn-group:hover  .google-play-btn-right {
+    background: rgba(245, 245, 245, 0.45);
+}
+.btn-group:hover .google-play-btn-left {
+    background: rgba(245, 245, 245, 0.45);
+}
+.btn-group{
+    margin-bottom: 6%;
+    padding: 0 0 0 0;
+    width: 100%;
+}
+.btn-group>.btn:hover{
+    z-index: 0 !important;
+}
+
+#home{
+    overflow: hidden;
+    background: linear-gradient(155deg, rgba(255, 255, 255, 1) 7%, #EDFEFA 30%);
+    height: 800px;
+}
+#home .container-fluid{
+    padding: 7% 0 0;
+}
+#home .card{
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+}
+#home .card-body{
+    text-align: center;
+    padding-left: 5%;
+    padding-top: 10%;
+    padding-right: 5%
+}
+#home .card-body  a {
+    text-decoration: none !important;
+}
+#home .card-title{
+    color:#1F2732;
+    font-weight: bold;
+}
+#home .card-text{
+    color: black;
+    padding-top: 2%;
+    font-size: 1.3rem
+}
+#home .carousel-indicators{
+    position: absolute;
+    right: 2px;
+    bottom: 43%;
+    left: 97%;
+    z-index: 15;
+    display: block;
+    padding-left: 0;
+    margin-right: 0;
+    margin-left: 0;
+    list-style: none;
+    width: 20px;
+}
+
+#home .carousel-indicator{
+    background-color: transparent ;
+    opacity: 1;
+    cursor: pointer;
+    display:block;
+    width: 75%;
+    height: 15px;
+    margin: 10px 0 0;
+    border-radius: 50%;
+    border: 0.17rem solid white;
+}
+
+#home .carousel-indicator.active{
+    background-color: #C85987;
+    margin-left: -7%;
+    width: 90%;
+    height: 18px;
+}
+#home .carousel-indicator.active .vertical-line{
+    margin-top: 105%;
+    height: 12px;
+}
+
+
+
+
+
+
+
+
+#about .container-fluid:first-child{
+   padding-top: 10%;
+}
+
+#about p{
+    font-size: 17px;
+}
+.about-list-items{
+    margin-top: 30px;
+}
+
+
+#values{
+    margin-top: 150px;
+}
+
+#values .card-title{
+    color: #a39161;
+    font-size: 30px;
+}
+#values .card-text{
+    color: #61676F;
+    font-size: 1.3rem;
+}
+.value .rounded-circle{
+    clip-path: circle();
+    object-fit: cover;
+}
+
+
+#team{
+    overflow: hidden;
+}
+#team .card{
+    border: none;
+    border-radius: 0;
+}
+#team .rounded-circle{
+    z-index: 0;
+    clip-path: circle();
+    object-fit: cover;
+    object-position: bottom;
+}
+.team-member{
+    z-index: 2;
+    position: relative;
+    background-color: white;
+    width: 50%;
+    padding-bottom: 50%;
+    margin:-50% 0 0 50%;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 5px 0  5px rgba(201, 201, 201, 0.4);
+    -moz-box-shadow: 5px 0  5px  rgba(201, 201, 201, 0.4);
+    -webkit-box-shadow: 5px 0 5px  rgba(201, 201, 201, 0.4);
+    -o-box-shadow: 5px 0  5px  rgba(201, 201, 201, 0.4);
+}
+#team .biography{
+    z-index: 1;
+    position: relative;
+    padding-top: 23%;
+    margin: -20% 10% 0 20%;
+    background-color: #F3D053;
+    color: black;
+    line-height: 2rem;
+    min-height: 350px;
+}
+.team-member-header{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    margin: 0;
+}
+.team-member .name{
+    color: black;
+    font-size: 1.4rem;
+}
+.team-member .position{
+    color: #61676F;
+    font-size: 1.4rem;
+}
+
+
+#contact{
+    padding-top: 20%;
+    color: white;
+}
+#contact p{
+    font-size: 17px;
+    margin-bottom: 0;
+}
+#contact .top{
+    padding: 30px 30px;
+    background-color: #4C9492 ;
+}
+#contact .bottom{
+    padding: 15px 25px;
+    background-color: #366B69 ;
+}
+.contact-info{
+    color: #BEFFFE;
+}
+.contact-info-div-right{
+    padding-left:10%;
+    padding-right: 18%;
+}
+.contact-info-div-left{
+    padding-left:20%;
+    padding-right: 8%;
+}
+#contact .top .rounded-circle{
+   width: 100%;
+}
+#contact .bottom .rounded-circle{
+    width: 6%;
+}
+.contact-custom-padding{
+    padding-top: 5%;
+}
+.map{
+    width:340px;
+    height: 175px;
+}
+
+
+
+
+
+#login .card{
+    border: none;
+    border-radius: 10px;
+    padding: 4% 9% 0;
+    align-items: center;
+}
+#login .card-body{
+    width: 98%;
+    padding: 50px 0 0;
+}
+#login #email{
+    font-size: 14px;
+    border-radius: 7px;
+    color: #212223;
+    font-style: italic;
+    height: 45px;
+    margin-bottom: 8%;
+    padding-left: 5%;
+    border: 0.05rem solid #61676F;
+}
+#login #email:focus{
+    background-color: #fff;
+    border-color: #61676F;
+    outline: 0;
+    box-shadow: 0 0 0 0;
+}
+#login #password{
+    font-size: 14px;
+    border-radius: 7px;
+    color: #212223;
+    font-style: italic;
+    height: 45px;
+    margin-bottom: 5%;
+    padding-left: 5%;
+    border: 0.05rem solid #61676F;
+}
+#login #password:focus{
+    background-color: #fff;
+    border-color: #61676F;
+    outline: 0;
+    box-shadow: 0 0 0 0;
+}
+#login-btn{
+    color: white;
+    float: right;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 0.65rem 2rem;
+    background-color: #cd4c84;
+    border-radius: 7px;
+}
+#login-btn:hover{
+    background-color: #d73c7f;
+}
+
+
+#login-carousel .carousel-indicators{
+    position: absolute;
+    right: 2px;
+    bottom: 43%;
+    left: 97%;
+    z-index: 15;
+    display: block;
+    padding-left: 0;
+    margin-right: 0;
+    margin-left: 0;
+    list-style: none;
+    width: 20px;
+}
+
+#login-carousel .carousel-indicator{
+    background-color: transparent ;
+    opacity: 1;
+    cursor: pointer;
+    display:block;
+    width: 75%;
+    height: 15px;
+    margin: 10px 0 0;
+    border-radius: 50%;
+    border: 0.17rem solid white;
+}
+
+#login-carousel .carousel-indicator.active{
+    background-color: #C85987;
+    margin-left: -7%;
+    width: 90%;
+    height: 18px;
+}
+#login-carousel .carousel-indicator.active .vertical-line{
+    margin-top: 105%;
+    height: 12px;
+}
+
+.reset_pass{
+    color: #5555F0 ;
+    font-size: 0.8rem;
+}
+.reset_pass:hover{
+    color: #4444e8;
+}
+
+#remember-input {
+    font-size: 16px;
+    visibility: hidden;
+}
+
+#remember-checkmark {
+    cursor: pointer;
+    position: absolute;
+    left: 5%;
+    height: 16px;
+    width: 17px;
+    border: 0.08rem solid #61676F;
+    border-radius: 20%;
+}
+#remember-input:checked ~ #remember-checkmark {
+    background-color: #2196F3;
+}
+#remember-checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+#remember-input:checked ~ #remember-checkmark:after {
+    display: block;
+}
+#remember-checkmark:after {
+    position: absolute;
+    top: 50%;
+    /*width: 100%;*/
+    /*transform: translateY(-50%);*/
+    right: 40%;
+    top: 23%;
+    margin: 0;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.register-text{
+    margin-top: 20vh;
+}
+.register-text a{
+    color: #5555F0 ;
+}
+.register-text p{
+    color: #61676F ;
+}
+.benefits-section .rounded-circle {
+    clip-path: circle();
+}
+
+
+
+
+
+#register .card{
+    border: none;
+    border-radius: 10px;
+    padding: 4% 9% 0;
+    align-items: center;
+}
+#register .card-body{
+    width:98%;
+    padding: 20px 0 0;
+}
+#register input[type=password],#register input[type=email],#register input[type=text],#register #phone{
+    font-family: 'ubuntulight';
+    font-size: 14px;
+    border-radius: 7px;
+    color: #212223;
+    font-style: italic;
+    height: 45px;
+    padding-left: 5%;
+    border: 1px solid #61676F;
+}
+#register input[type=password]:focus,#register #email:focus, #register input[type=text]:focus,#register #phone:focus{
+    font-family: 'ubuntulight';
+    background-color: #fff;
+    border-color: #61676F;
+    outline: 0;
+    box-shadow: 0 0 0 0;
+}
+
+#register-btn{
+    font-family: 'ubuntulight';
+    color: white;
+    float: right;
+    font-size: 1rem;
+    padding: 0.65rem 2rem;
+    background-color: #cd4c84;
+    border-radius: 7px;
+}
+#register-btn:hover{
+    background-color: #d73c7f;
+}
+
+
+
+.login-text{
+    margin-top: 3vh;
+}
+.login-text a{
+    font-family: 'ubuntubold';
+    color: #5555F0 ;
+}
+.login-text p{
+    font-family: 'ubunturegular';
+    color: #61676F ;
+}
+#register .select2-selection {
+    font-size: 14px;
+    color: #212223;
+    font-style: italic;
+    padding-left: 5%;
+    border: 1px solid #61676F;
+    height:40px;
+    border-radius: 7px;
+}
+.phone-code{
+    font-size: 0.9rem;
+}
+
+
+
+.vertical-line{
+    border-top: 0;
+    width:0.1rem;
+    height: 12px;
+}
+.vertical-line.white{
+    background-color: white;
+}
+.horizontal-line{
+    width: 50px;
+    border-radius: 5px;
+}
+.horizontal-line.black{
+    border-top: 3px solid black;
+}
+.horizontal-line.white{
+    border-top: 3px solid white;
+}
+.horizontal-line.left{
+    float: left;
+}
+
+
+
+
+@media screen and (max-width: 1200px){
+    .logo{
+        width: 135px;
+        height: 35px;
+    }
+    .nav-link{
+        margin-right: 2.1rem;
+        font-size: 13px;
+    }
+    .nav-container{
+        padding-right: 18px;
+        padding-left: 18px;
+        padding-top: 5px ;
+    }
+    .business-login-btn{
+        padding: 8px 10px;
+        font-weight: normal;
+        border-radius: 11px;
+        font-size: 13px;
+    }
+    .app-store-btn-left{
+        padding:0 0 0 0;
+    }
+}
+@media screen and (max-width: 1160px){
+    .contact-info-div-right{
+        padding-left:5%;
+        padding-right: 5%;
+    }
+    .contact-info-div-left{
+        padding-left:5%;
+        padding-right: 5%;
+    }
+}
+@media screen and (max-width: 1024px){
+    .nav-link {
+        margin-right: 1.1rem;
+        font-size: 11px;
+    }
+    .business-login-btn{
+        padding: 8px 10px;
+        font-weight: normal;
+        border-radius: 11px;
+        font-size: 11px;
+    }
+
+    #features .phone{
+        text-align: left;
+    }
+}
+@media screen and (max-width: 990px){
+    #home{
+        height: 770px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .nav-link.active:after {
+        margin: 0 0;
+        width: 8%;
+    }
+    .logo{
+        width: 150px;
+        height: 40px;
+    }
+    .nav-container{
+        padding: 0 0;
+    }
+    #home{
+        height: 760px;
+    }
+    #home .carousel-indicators {
+        left: 95%;
+    }
+    #about{
+        margin-top: 10px;
+    }
+    #about .container-fluid:first-child{
+        padding-top: 10%;
+    }
+
+    #features .img-thumbnail{
+        width: 70%;
+        height: 40%;
+    }
+
+    #contact .bottom h4{
+        line-height: 26px;
+    }
+
+
+    #contact .top .rounded-circle{
+        width: 70%;
+    }
+    #register .card{
+        padding: 4% 2% 0;
+    }
+    #register .card-body{
+        width: 90%;
+    }
+    #register input[type=password],#register input[type=email],#register input[type=text],#phone{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 575px){
+    #home{
+        height: 730px;
+    }
+    #home .carousel-indicators{
+        left: 92%;
+    }
+    #features .img-thumbnail{
+        margin-top: -15%;
+        width: 40px;
+        height: 85px;
+    }
+    #features h3{
+        padding-left: 40px;
+    }
+    #features h1{
+        padding-top: 5px;
+    }
+    #features {
+        margin-top: 10px;
+    }
+    #features .row:first-child {
+        padding-top: 22% ;
+    }
+    #about{
+        margin-top: 10px;
+    }
+    #about .row:first-child  {
+        padding-top: 5%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    #features {
+        margin-top: 10px;
+    }
+    #features .row:first-child {
+        padding-top: 22% ;
+    }
+    #about .row:first-child  {
+        padding-top: 5%;
+    }
+    .contact-custom-padding{
+        padding-top: 3.5%;
+    }
+}
+@media screen and (max-width: 375px) {
+    #features {
+        margin-top: 0;
+    }
+    #features .row:first-child {
+        padding-top: 25% ;
+    }
+    #about  {
+        margin-top: 10px;
+        padding-top: 10%;
+    }
+    #contact .top {
+        padding: 30px 15px;
+    }
+    .contact-custom-padding{
+        padding-top: 3%;
+    }
+}
+@media screen and (max-width: 350px) {
+    .phone-code {
+        font-size: 0.8rem;
+    }
+    #contact .map{
+        width: 280px;
+    }
+    .contact-custom-padding{
+        padding-top: 2%;
+    }
+}
